@@ -1,44 +1,53 @@
 .black:checked,
 .black {
-  background-color: #000000 !important;
+  background-color: #000000;
+  background-image: url("../_img/black-markertip-button.jpg");
 }
 
 .red:checked,
 .red {
   background-color: #ff3300;
+  background-image: url("../_img/red-markertip-button.jpg");
 }
 
 .blue:checked,
 .blue {
   background-color: #3399ff;
+  background-image: url("../_img/blue-markertip-button.jpg");
 }
 
 .teal:checked,
 .teal {
   background-color: #66ffcc;
+  background-image: url("../_img/turquoise-markertip-button.jpg");
 }
 
 .yellow:checked,
 .yellow {
   background-color: #ffff66;
+  background-image: url("../_img/yellow-markertip-button.jpg");
 }
 
 .brown:checked,
 .brown {
   background-color: #993333;
+  background-image: url("../_img/brown-markertip-button.jpg");
 }
 
 .pink:checked,
 .pink {
   background-color: #ffccff;
+  background-image: url("../_img/pink-markertip-button.jpg");
 }
 
 .green:checked,
 .green {
   background-color: #00ff00;
+  background-image: url("../_img/green-markertip-button.jpg");
 }
 
 .grey:checked,
 .grey {
   background-color: #e6e6e6;
+  background-image: url("../_img/grey-markertip-button.jpg");
 }

@@ -41,9 +41,9 @@ li {
 }
 
 li input[type="checkbox"] {
-  border: 1px solid black;
-  width: 30px;
-  height: 30px;
+  /*border: 1px solid black;*/
+  width: 40px;
+  height: 40px;
 }
 
 li input[type="checkbox"]:checked {
@@ -54,6 +54,10 @@ li input[type="checkbox"]:checked {
   margin: 20px 0 0 0;
 }
 
+.grid input[type="checkbox"],
+.grid input[type="checkbox"]:checked {
+  background-image: none !important;
+}
 
 .hidden {
   display: none;
