@@ -4,7 +4,7 @@ var colorSelected = 'black';
 var prevSelected;
 
 //create grid
-this.ps = new Grid(document.getElementById('pixelShirt'), 40);
+this.ps = new Grid(document.getElementById('pixelShirt'), 41);
 
 //set colors
 var pixelColor = document.getElementById('colors');

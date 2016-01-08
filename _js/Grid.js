@@ -12,19 +12,11 @@ var Grid = function (table, size) {
       checkboxes = [],
       x,
       y,
-      yIndicator;
+      yIndicator,
+      xIndicator,
+      xChars;
 
-  yIndicator = document.getElementById('y-indicator');
-
-  //create the y indicator
-  for (y=1; y<=size; y++) {
-    par = document.createElement('p');
-    par.innerHTML = y;
-    // par.innerHTML(y);
-    yIndicator.appendChild(par);
-  }
-
-
+  xChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmn';
 
   //create the pixel grid
   for (y=0; y<size; y++) {
@@ -33,6 +25,21 @@ var Grid = function (table, size) {
 
     for (x=0; x<size; x++) {
       cell = document.createElement('td');
+
+      //y indicators
+      if(y===0 && x>0) {
+        par = document.createElement('p');
+        par.innerHTML = xChars.charAt(x-1);
+        cell.appendChild(par);
+      }
+
+      //x indicators
+      if(x===0 && y>0) {
+        par = document.createElement('p');
+        par.innerHTML = y;
+        cell.appendChild(par);
+      }
+
       checkbox = document.createElement('input');
       checkbox.type = 'checkbox';
       checkbox.cell = new Cell([y, x]);

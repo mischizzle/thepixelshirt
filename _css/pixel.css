@@ -21,14 +21,24 @@ table {
 
 td {
   border: 1px solid gray;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: center;
+}
+
+#pixelShirt td p {
+  font-size: 14px;
+  position: absolute;
+  width:16px;
 }
 
 input[type="checkbox"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   display: block;
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
 }
 
 input[type="checkbox"]:checked {
@@ -47,14 +57,6 @@ li input[type="checkbox"] {
 
 li input[type="checkbox"]:checked {
   box-shadow: 0 8px 6px -6px black;
-}
-
-#y-indicator {
-  display: inline-block;
-  margin-top: 20px;
-  vertical-align: top;
-  font-size: 13px;
-  line-height: 16px;
 }
 
 .grid {
