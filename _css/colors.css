@@ -1,53 +1,53 @@
-.black:checked,
+#black,
 .black {
-  background-color: #000000;
   background-image: url("../_img/black-markertip-button.jpg");
+  background-color: #000000;
 }
 
-.red:checked,
+#red,
 .red {
-  background-color: #ff3300;
   background-image: url("../_img/red-markertip-button.jpg");
+  background-color: #ff3300;
 }
 
-.blue:checked,
+#blue,
 .blue {
-  background-color: #3399ff;
   background-image: url("../_img/blue-markertip-button.jpg");
+  background-color: #3399ff;
 }
 
-.teal:checked,
+#teal,
 .teal {
-  background-color: #66ffcc;
   background-image: url("../_img/turquoise-markertip-button.jpg");
+  background-color: #66ffcc;
 }
 
-.yellow:checked,
+#yellow,
 .yellow {
-  background-color: #ffff66;
   background-image: url("../_img/yellow-markertip-button.jpg");
+  background-color: #ffff66;
 }
 
-.brown:checked,
+#brown,
 .brown {
   background-color: #993333;
   background-image: url("../_img/brown-markertip-button.jpg");
 }
 
-.pink:checked,
+#pink,
 .pink {
-  background-color: #ffccff;
   background-image: url("../_img/pink-markertip-button.jpg");
+  background-color: #ffccff;
 }
 
-.green:checked,
+#green,
 .green {
-  background-color: #00ff00;
   background-image: url("../_img/green-markertip-button.jpg");
+  background-color: #00ff00;
 }
 
-.grey:checked,
+#grey,
 .grey {
-  background-color: #e6e6e6;
   background-image: url("../_img/grey-markertip-button.jpg");
+  background-color: #e6e6e6;
 }

@@ -40,8 +40,7 @@ var Grid = function (table, size) {
         cell.appendChild(par);
       }
 
-      checkbox = document.createElement('input');
-      checkbox.type = 'checkbox';
+      checkbox = document.createElement('div');
       checkbox.cell = new Cell([y, x]);
       checkbox.addEventListener("click", this.clickHandler, false);
       checkboxes[y][x] = checkbox;
@@ -54,9 +53,6 @@ var Grid = function (table, size) {
 };
 
 Grid.prototype.clickHandler = function () {
-  if(!this.checked) {
-    this.classList.remove(colorSelected);
-  } else {
-    this.classList.add(colorSelected);
-  }
+  this.className = "";
+  this.classList.add(colorSelected);
 };
