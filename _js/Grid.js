@@ -43,6 +43,8 @@ var Grid = function (table, size) {
       checkbox = document.createElement('div');
       checkbox.cell = new Cell([y, x]);
       checkbox.addEventListener("click", this.clickHandler, false);
+      checkbox.addEventListener("mousedown", this.mousedownHandler, false);
+
       checkboxes[y][x] = checkbox;
       cell.appendChild(checkbox);
       row.appendChild(cell);
@@ -56,3 +58,24 @@ Grid.prototype.clickHandler = function () {
   this.className = "";
   this.classList.add(colorSelected);
 };
+
+Grid.prototype.mousedownHandler = function(e) {
+  console.log(e);
+  e.preventDefault();
+}
+
+Grid.prototype.getGrid = function() {
+  return this;
+}
+
+Grid.prototype.reset = function() {
+  var grid = Grid.prototype.getGrid();
+  // console.log(this.table.childNodes);
+  console.log("resetting the grid");
+
+  for(var i=0; i<this.table.childNodes.length; i++) {
+    for(var j=0; j<this.table.childNodes.length; j++) {
+      this.table.childNodes[i].childNodes[j].childNodes[0].className = "";
+    }
+  }
+}

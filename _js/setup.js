@@ -3,9 +3,14 @@
 var colorSelected = 'black';
 var prevSelected;
 var pixelColor;
+var resetBtn;
+var pixelShirt;
 
 //create grid
-this.ps = new Grid(document.getElementById('pixelShirt'), 41);
+pixelShirt = new Grid(document.getElementById('pixelShirt'), 41);
+
+resetBtn = document.getElementById('reset');
+resetBtn.addEventListener('click', resetGrid);
 
 //set colors
 pixelColor = document.getElementById('colors');
@@ -22,4 +27,8 @@ function selectColor() {
 
   this.classList.add("checked");
   colorSelected = this.id;
+}
+
+function resetGrid() {
+  pixelShirt.reset();
 }

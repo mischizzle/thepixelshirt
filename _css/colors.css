@@ -1,3 +1,9 @@
+#white,
+.white {
+  background-image: url("../_img/white-markertip-button.jpg");
+  background-color: #ffffff;
+}
+
 #black,
 .black {
   background-image: url("../_img/black-markertip-button.jpg");
@@ -14,12 +20,13 @@
 .blue {
   background-image: url("../_img/blue-markertip-button.jpg");
   background-color: #3399ff;
+  background-color: #0056A6;
 }
 
 #teal,
 .teal {
   background-image: url("../_img/turquoise-markertip-button.jpg");
-  background-color: #66ffcc;
+  background-color: #009AAF;
 }
 
 #yellow,
@@ -43,11 +50,11 @@
 #green,
 .green {
   background-image: url("../_img/green-markertip-button.jpg");
-  background-color: #00ff00;
+  background-color: #9AC939;
 }
 
 #grey,
 .grey {
   background-image: url("../_img/grey-markertip-button.jpg");
-  background-color: #e6e6e6;
+  background-color: #7B7B7B;
 }

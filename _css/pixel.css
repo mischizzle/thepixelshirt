@@ -6,7 +6,7 @@
 body {
   text-align: center;
   font-family: sans-serif;
-  margin: 20px 0 0 0;
+  margin: 20px 0;
 }
 
 h1 {
@@ -28,7 +28,8 @@ td {
 }
 
 #colors {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  display: inline-block;
 }
 
 #colors li {
@@ -40,10 +41,56 @@ td {
   box-shadow: 0 8px 6px -6px black;
 }
 
+#reset {
+  vertical-align: top;
+  display: inline-block;
+  margin-left: 65px;
+  background-repeat: no-repeat;
+  background-color: #04bab1;
+  border: none;
+  width: 65px;
+  padding: 10px 0;
+  box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.1),0px 1px 1px rgba(0,0,0,0.1);
+  outline: none;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 14px;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+#pixelShirt table {
+  overflow: hidden;
+}
+
+#pixelShirt tr:hover{
+  background-color: #F0FFFF;
+  /*font-weight: bold;*/
+}
+
+#pixelShirt td,
+#pixelShirt th {
+  position: relative;
+  cursor: crosshair;
+}
+
 #pixelShirt td p {
   font-size: 14px;
   position: absolute;
   width:16px;
+}
+
+#pixelShirt td:hover::after,
+#pixelShirt th:hover::after {
+  content: "";
+  position: absolute;
+  background-color: #F0FFFF;
+  /*font-weight: bold;*/
+  left: 0;
+  top: -5000px;
+  height: 10000px;
+  width: 100%;
+  z-index: -1;
 }
 
 #pixelShirt td div {
@@ -52,16 +99,14 @@ td {
   height: 16px;
 }
 
-input[type="checkbox"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  display: block;
-  width: 16px;
-  height: 16px;
+#pixelShirt td div:hover {
+  outline: #000000 dotted thick;
 }
 
-input[type="checkbox"]:checked {
-  /*background-color: black;*/
+.logo {
+  margin: 0 auto;
+  text-align: right;
+  width: 655px;
 }
 
 li {
